@@ -19,19 +19,29 @@ nav .mobile img{
     max-width: none;
 }
 
+
+
+/* MAIN CONTAINER */
+
+.main-container{
+    height: calc(100% - 58.4px);
+}
+
 /* SIDE NAVIGATION BAR */
 
 .side-bar{
     background-color: rgb(5, 30, 52);
-    height: 100%;
+    background-image: url(../img/sidebar-bg.png);
 }
 
-.side-bar li *{
+.side-bar button{
+    background-color: transparent;
     color: white;
 }
 
-.side-bar .container{
-    height: 100%;
+.side-bar button div {
+    width: 30px;
+    display: inline-block;
 }
 
 /* MEDIA-QUERIES */
@@ -39,6 +49,18 @@ nav .mobile img{
 @media screen and (max-width: 768px) {
     .side-bar{
         width: 50px;
+    }
+
+    .side-bar button{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .side-bar button div{
+        padding: 0;
+        text-align: center;
     }
 }
 

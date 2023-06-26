@@ -15,23 +15,20 @@
     <!-- NAVIGATION BAR -->
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid d-flex bg-white">
+            <div class="container-fluid d-flex flex-nowrap bg-white">
                 <a class="navbar-brand d-none d-md-block " href="#">
-                    <img class="ratio ratio-1x1" src="./img/logo.svg" alt="Boolean-logo">
+                    <img src="./img/logo.svg" alt="Boolean-logo">
                 </a>
-                <a class="navbar-brand d-sm-block d-md-none" href="#">
-                    <img class="ratio ratio-1x1" src="./img/mobile-logo.png" alt="Boolean-logo">
+                <a class="mobile navbar-brand d-sm-block d-md-none" href="#">
+                    <img src="./img/mobile-logo.png" alt="Boolean-logo">
                 </a>
-                <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-2 border-0" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                <form class="container flex-grow-1" id="max-width-none">
+                    <div class="input-group">
+                        <span class="input-group-text border-0 bg-dark border-0" style="--bs-bg-opacity: .1;" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control bg-dark border-0" style="--bs-bg-opacity: .1;" placeholder="Prova a cercare: Lezione di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
                 </form>
-                <!--
-                <form class="form-floating d-flex flex-grow-1" role="search">
-                    <input type="search" class="form-control me-2" id="floatingSearch" placeholder="Search">
-                    <label for="floatingSearch"><i class="fa-solid fa-magnifying-glass"></i> Prova a cercare: Lezione di Laravel</label>
-                </form>
-                -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <a class="nav-link active text-warning" aria-current="page" href="#"><i class="fa-solid fa-bell"></i></a>
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
@@ -53,10 +50,21 @@
             </div>
         </nav>
     </header>
+    <!-- SIDEBAR -->
+    <div class="side-bar overflow-hidden">
+        <img src="./img/sidebar-bg.png" alt="">
+        <div class="container py-4 px-3">
+            <ul class="list-unstyled">
+                <li>
+                    <span><i class="fa-solid fa-house text-white"></i>Home</span>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- MAIN -->
     <main>
-        <!-- SIDEBAR -->
-        <div class="sidebar"></div>
+        
+        
     </main>
     <!-- JS CDN BUNDLE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

@@ -2,6 +2,7 @@
 
 body{
     width: 100vw;
+    height: 100vh;
 }
 
 main{
@@ -10,10 +11,31 @@ main{
 
 /* NAVIGATION BAR */
 
-header{
-    height: 75px;
+nav .mobile img{
+    width: 35px;
 }
 
-nav{
-    height: 60px;
+#max-width-none{
+    max-width: none;
+}
+
+/* SIDE NAVIGATION BAR */
+
+.side-bar{
+    background-image: url("img/sidebar-bg.png");
+    background-color: rgb(5, 30, 52);
+}
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 768px) {
+    .side-bar{
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .side-bar{
+        width: 150px;
+    }
 }

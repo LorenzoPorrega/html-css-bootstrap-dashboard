@@ -22,8 +22,16 @@ nav .mobile img{
 /* SIDE NAVIGATION BAR */
 
 .side-bar{
-    background-image: url("img/sidebar-bg.png");
     background-color: rgb(5, 30, 52);
+    height: 100%;
+}
+
+.side-bar li *{
+    color: white;
+}
+
+.side-bar .container{
+    height: 100%;
 }
 
 /* MEDIA-QUERIES */

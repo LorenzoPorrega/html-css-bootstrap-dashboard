@@ -1,0 +1,19 @@
+/* GENERAL CUSTOM STYLES */
+
+body{
+    width: 100vw;
+}
+
+main{
+    overflow: auto;
+}
+
+/* NAVIGATION BAR */
+
+header{
+    height: 75px;
+}
+
+nav{
+    height: 60px;
+}

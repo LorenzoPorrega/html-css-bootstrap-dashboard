@@ -19,8 +19,6 @@ nav .mobile img{
     max-width: none;
 }
 
-
-
 /* MAIN CONTAINER */
 
 .main-container{
@@ -42,6 +40,29 @@ nav .mobile img{
 .side-bar button div {
     width: 30px;
     display: inline-block;
+}
+
+/* MAIN */
+
+main{
+    width: 100%;
+}
+
+/* OVERVIEW */
+
+.overview{
+    background-color: rgb(27, 114, 232);
+    color: white;
+    width: 100%;
+}
+
+.overview button{
+    background-color: rgb(27, 114, 232);
+}
+
+.overview .badge{
+    background-color: rgb(22, 91, 186);
+    cursor: pointer;
 }
 
 /* MEDIA-QUERIES */

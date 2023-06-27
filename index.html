@@ -61,36 +61,36 @@
     </header>
     <div class="main-container d-flex flex-grow-1">
         <!-- SIDEBAR -->
-        <div class="side-bar overflow-hidden">
+        <div class="side-bar">
             <div class="container py-4 px-2 h-100 d-flex flex-column justify-content-between">
                 <div>
                     <ul class="list-unstyled">
                         <li class="mb-2">
                             <button type="button" class="btn btn-light border-0 rounded-0 w-100 text-start">
                                 <div class="side-icon"><i class="fa-solid fa-house"></i></div>
-                                <span class="fw-bold d-sm-none d-md-inline-block">Home</span>
+                                <span class="fw-bold d-none d-md-inline-block">Home</span>
                             </button>
                         </li>
                         <li class="mb-2">
                             <button type="button" class="btn btn-light border-0 rounded-0 w-100 text-start">
                                 <div class="side-icon"><i class="fa-solid fa-chart-simple"></i></div>
-                                <span class="fw-bold d-sm-none d-md-inline-block">Stats</span>
+                                <span class="fw-bold d-none d-md-inline-block">Stats</span>
                             </button>
                         </li>
                         <li class="mb-2">
                             <button type="button" class="btn btn-light border-0 rounded-0 w-100 text-start">
                                 <div class="side-icon"><i class="fa-solid fa-signal"></i></div>
-                                <span class="fw-bold d-sm-none d-md-inline-block">Signals</span>
+                                <span class="fw-bold d-none d-md-inline-block">Signals</span>
                             </button>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <ul class="list-unstyled">
-                        <li class="mb-2">
+                        <li>
                             <button type="button" class="btn btn-light border-0 rounded-0 w-100 text-start">
                                 <div class="side-icon"><i class="fa-solid fa-gear"></i></div>
-                                <span class="fw-bold d-sm-none d-md-inline-block">Admin</span>
+                                <span class="fw-bold d-none d-md-inline-block">Admin</span>
                             </button>
                         </li>
                     </ul>
@@ -98,8 +98,42 @@
             </div>
         </div>
         <!-- MAIN -->
-        <main>
-            
+        <main class="d-flex flex-column">
+            <div class="overview py-4 px-2">
+                <div class="row g-3">
+                    <div class="col-12 order-sm-1 order-2 col-md-4 col-lg-6">
+                        <div>
+                            <h2 class="d-inline-block">Boolean</h2>
+                            <span class="badge rounded-pill bg-color-badge">Piano blaze</span>
+                        </div>
+                        <div>
+                            <span class="badge rounded-pill bg-color-badge">3 app</span>
+                            <span><i class="fa-solid fa-angles-right"></i></span>
+                            <span class="badge rounded-pill bg-color-badge d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                            <span class="badge rounded-pill bg-color-badge d-none d-lg-inline">Boolean mobile app</span>
+                            <span class="badge rounded-pill bg-color-badge d-none d-lg-inline">Boolean web app</span>
+                            <span class="badge rounded-pill bg-color-badge d-none d-lg-inline">Boolean big app</span>
+                        </div>
+                    </div>
+                    <div class="col-12 order-sm-2 order-3 col-md-4 col-lg-3">
+                        <span >Studenti online negli ultimi 30 minuti</span>
+                        <h2>125</h2>
+                    </div>
+                    <div class="col-12 order-sm-3 order-1 col-md-4 col-lg-3">
+                        <span>Nuovo Studente</span>
+                        <button class="btn btn-light btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </main>
     </div>

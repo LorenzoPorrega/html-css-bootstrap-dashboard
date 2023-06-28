@@ -1,10 +1,5 @@
 /* GENERAL CUSTOM STYLES */
 
-body{
-    width: 100vw;
-    height: 100vh;
-}
-
 main{
     overflow: auto;
     background-color: rgb(248, 249, 250);
@@ -64,6 +59,12 @@ main{
 .overview .badge{
     background-color: rgb(22, 91, 186);
     cursor: pointer;
+}
+
+/* PROSSIME CLASSI */
+
+.table tr:nth-child(2), .table tr:last-child{
+    white-space: nowrap;
 }
 
 /* MEDIA-QUERIES */
